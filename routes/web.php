@@ -17,3 +17,9 @@ Route::get('/contato', [SiteController::class, 'contact']);
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/contato', [SiteController::class, 'contact']);
+
+Route::get('/sobre', function () {
+    return view('site/about');
+});

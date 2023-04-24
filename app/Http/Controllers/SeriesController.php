@@ -12,7 +12,11 @@ class SeriesController extends Controller
             'Sherlock Holmes',
             'Stranger Things'
         ];
-        return view('listar-series', compact ('series'));
+        return view('series.index')->with ('series', $series);
+    }
 
-}
+    public function create()
+    {
+        return view ('series.create');
+    }
 }
